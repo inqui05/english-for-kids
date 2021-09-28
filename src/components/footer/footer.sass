@@ -1,0 +1,39 @@
+//footer
+.footer
+  height: 50px
+  background: linear-gradient(180deg, #0099ae 0%, #00bf82 100%)
+  &-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 20px
+    width: 90rem
+    margin: auto
+  &__logo
+    width: 70px
+    height: 30px
+    &-image
+      height: 100%
+  &__github
+    display: flex
+    align-items: center
+    height: 20px
+    &-account
+      font-size: 1.5rem
+      color: #fff
+    &-icon
+      height: 100%
+      margin-right: 0.5rem
+@media screen and (max-width: 1279px)
+  .footer-container
+    width: 67.86rem
+@media screen and (max-width: 979px)
+  .footer-container
+    width: 45.71rem
+@media screen and (min-width: 509px) and (max-width: 659px)
+  .footer-container
+    width: 36rem
+    padding: 0 1.5%
+@media screen and (max-width: 508px)
+  .footer-container
+    width: 21.43rem

@@ -1,0 +1,72 @@
+.category
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  position: relative
+  width: 21.43rem
+  height: 18.57rem
+  overflow: hidden
+  border-radius: 1rem
+  transition: 0.2s
+  box-shadow: 0 0 0.5rem black
+  cursor: pointer
+  margin: 0.5%
+  background: linear-gradient(180deg, #0099ae 0%, #00bf82 100%)
+  &:hover
+    transform: translateZ(1.43rem)
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6)
+  &:hover .category__image-wrapper
+    border: 0.29rem solid #fff
+  &__image
+    position: relative
+    left: -12.5%
+    height: 100%
+    &-wrapper
+      position: relative
+      z-index: 5
+      width: 15.71rem
+      height: 15.71rem
+      border-radius: 50%
+      overflow: hidden
+      transition: 0.2s
+      border: 0.29rem solid #ff8C00
+  &__cover
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 2.5rem
+    text-align: center
+    font-size: 2rem
+    line-height: 2.25rem
+    font-weight: 500
+    color: #ff8C00
+    background-color: #fff
+@media screen and (max-width: 1279px)
+  .category
+    margin: 0.85%
+@media screen and (max-width: 979px)
+  .category
+    margin: 1.55%
+@media screen and (min-width: 509px) and (max-width: 659px)
+  .category
+    width: 17.14rem
+    height: 14.86rem
+    border-radius: 1rem
+    margin: 1%
+    &__image
+      left: -12.5%
+      height: 100%
+      &-wrapper
+        width: 12rem
+        height: 12rem
+    &__cover
+      height: 2rem
+      font-size: 1.5rem
+      line-height: 1.75rem
+@media screen and (max-width: 508px)
+  .category
+    margin: 0
+    &:not(:last-child)
+      margin-bottom: 4%

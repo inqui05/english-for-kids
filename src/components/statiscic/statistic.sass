@@ -1,0 +1,72 @@
+.words
+  width: 100%
+  overflow-x: scroll
+  &__cell
+    font-size: 1.4rem
+    line-height: 1.6rem
+    color: black
+    padding: 3px
+    text-align: center
+  &__head-cell
+    background: linear-gradient(180deg, #0099ae 0%, #00bf82 100%)
+    cursor: pointer
+  &__record
+    background-color: #fff
+    &:nth-child(2n)
+      background-color: #808080
+  &__name
+    color: white
+    font-size: 1.8rem
+    line-height: 2rem
+    margin: 0
+    margin-top: 40px
+    margin-bottom: 20px
+  &__page
+    color: white
+    font-size: 1.25rem
+    line-height: 1.45rem
+    margin: 0 0 20px 0
+.arrow
+  display: inline-block
+  background-color: inherit
+  &__hidden
+    .arrow
+      display: none
+  &__inverse
+    .arrow
+      transform: rotate(180deg)
+.hidden
+  display: none
+.scope
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  overflow-x: scroll
+  &__buttons
+    display: flex
+    justify-content: space-between
+    justify-content: right
+    margin-bottom: 2rem
+  &__train,
+  &__reset
+    font-size: 1.25rem
+    color: #fff
+    background-color: #00bf82
+    background-repeat: no-repeat
+    background-size: 1.79rem
+    background-position: center
+    cursor: pointer
+    transition: 0.3s ease
+    border-radius: 0.29rem
+    border: none
+    box-shadow: 0 0 0.5rem black
+    padding: 0.5rem 2rem
+    text-transform: uppercase
+  &__train
+    margin-right: 1rem
+@media screen and (max-width: 659px)
+  .words
+    &__cell
+      font-size: 1rem
+      line-height: 1.15rem
+      padding: 1px

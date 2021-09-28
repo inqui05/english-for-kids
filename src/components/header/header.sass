@@ -1,0 +1,168 @@
+.header
+  width: 100vw
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 90rem
+    margin: auto
+    padding: 0 0.5%
+.title
+  font-size: 2.5rem
+  font-weight: 500
+  color: #ff8C00
+  letter-spacing: 0.25rem
+  line-height: 2.75rem
+.menu
+  cursor: pointer
+  &__wrapper
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: absolute
+    z-index: 6
+    top: 0
+    left: -26.79rem
+    width: 26.79rem
+    height: 100vh
+    background: linear-gradient(180deg, #0099ae 0%, #00bf82 100%)
+    padding: 4.29rem
+    transition: left ease 0.5s
+  &__open
+    left: 0
+  &__list
+    list-style-type: none
+  &__button
+    background-color: transparent
+    padding: 0.71rem2.86rem
+    font-size: 1.5rem
+    line-height: 1.75rem
+    color: #fff
+    border-radius: 0.4rem
+    border-color: #fff
+    &:hover
+      background-color: #ff8C00
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+.switch
+  &__input
+    position: relative
+    width: 8.57rem
+    height: 2.86rem
+    appearance: none
+    background: #32cd32
+    border-radius: 1.43rem
+    transition: 0.5s
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2)
+    cursor: pointer
+    &:checked
+      background: #4682B4
+      &::before
+        left: 5.71rem
+      &::after
+        content: 'play'
+        position: absolute
+        color: #fff
+        text-transform: uppercase
+        font-size: 1.5rem
+        left: 10%
+        top: 35%
+    &::before
+      content: ''
+      position: absolute
+      width: 2.86rem
+      height: 2.86rem
+      border-radius: 50%
+      top: 0
+      left: 0
+      background-color: #fff
+      transition: 0.5s
+      transform: scale(1.1)
+      box-shadow: 0 0.14rem 0.36rem rgba(0, 0, 0, 0.2)
+    &::after
+      content: 'train'
+      position: absolute
+      color: #fff
+      text-transform: uppercase
+      font-size: 1.5rem
+      right: 10%
+      top: 35%
+.hidden
+  display: none
+@media screen and (max-width: 1279px)
+  .header__wrapper
+    width: 67.86rem
+  .menu
+    &__wrapper
+      width: 22rem
+      left: -22rem
+    &__open
+      left: 0
+@media screen and (max-width: 979px)
+  .header__wrapper
+    width: 45.71rem
+  .menu
+    &__wrapper
+      width: 100%
+      height: 100%
+      left: -100%
+    &__open
+      left: 0
+    &__button
+      width: 200px
+@media screen and (min-width: 509px) and (max-width: 659px)
+  .header__wrapper
+    width: 36rem
+    padding: 0 1.5%
+  .switch
+    &__input
+      width: 7rem
+      height: 2.5rem
+      border-radius: 1.43rem
+      &:checked
+        &::before
+          left: 4.5rem
+        &::after
+          font-size: 1.25rem
+      &::before
+        width: 2.5rem
+        height: 2.5rem
+      &::after
+        font-size: 1.25rem
+  .title
+    font-size: 2rem
+    line-height: 2.25rem
+  .menu
+    &__button
+      width: 200px
+    &__image
+      width: 48px
+      height: 48px
+@media screen and (max-width: 508px)
+  .header__wrapper
+    width: 21.43rem
+  .menu
+    &__wrapper
+      width: 100%
+      height: 100%
+  .switch
+    &__input
+      width: 5.75rem
+      height: 2.5rem
+      border-radius: 1.43rem
+      &:checked
+        &::before
+          left: 3.5rem
+        &::after
+          font-size: 1rem
+      &::before
+        width: 2.5rem
+        height: 2.5rem
+      &::after
+        font-size: 1rem
+        right: 5%
+  .title
+    display: none

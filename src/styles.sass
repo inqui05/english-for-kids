@@ -1,0 +1,46 @@
+*
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 14px
+  padding: 0
+  margin: 0
+a
+  text-decoration: none
+  cursor: pointer
+button
+  cursor: pointer
+  &:disabled
+    opacity: 0.3
+h2,
+h3
+  margin: 0
+body
+  width: 100vw
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+.invisible
+  opacity: 0
+.hidden
+  display: none
+.app
+  padding: 2.86rem 0
+  width: 90rem
+  margin: auto
+  align-items: center
+//media
+@media screen and (max-width: 1279px)
+  .app
+    width: 67.86rem
+@media screen and (max-width: 979px)
+  .app
+    width: 45.71rem
+@media screen and (min-width: 509px) and (max-width: 659px)
+  .app
+    width: 95%
+@media screen and (max-width: 508px)
+  .app
+    width: 95%
